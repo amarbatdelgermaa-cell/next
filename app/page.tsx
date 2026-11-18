@@ -1,0 +1,5 @@
+import Link from 'next/link';
+import Image from 'next/image';
+import styles from '@/app/ui/home.module.css';
+import {lusitana} from '@/app/ui/fonts';
+export default function Home(){return <main className="min-h-screen flex items-center justify-center p-6"><section className="max-w-6xl w-full rounded-3xl bg-white p-8 md:p-12 shadow-sm border grid md:grid-cols-2 gap-10 items-center"><div><p className="font-black text-blue-700 text-2xl">Acme Dashboard</p><h1 className={`mt-6 text-3xl md:text-4xl font-bold text-blue-500 ${lusitana.className}`}>Санхүүгийн dashboard</h1><div className={styles.shape} aria-hidden="true"/><p className="mt-4 text-slate-600">Next.js лаборатори №1–13. Хэрэглэгч, нэхэмжлэх, PostgreSQL, хайлт, формын шалгалт, Streaming болон нэвтрэлт.</p><Link className="inline-block mt-8 bg-blue-700 text-white rounded-lg px-6 py-3" href="/login">Нэвтрэх →</Link></div><div><Image src="/hero-desktop.png" width={1000} height={760} alt="Dashboard desktop танилцуулга" className="hidden md:block rounded-2xl"/><Image src="/hero-mobile.png" width={560} height={620} alt="Dashboard mobile танилцуулга" className="block md:hidden rounded-2xl"/></div></section></main>}
