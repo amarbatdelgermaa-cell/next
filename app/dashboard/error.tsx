@@ -1,2 +1,3 @@
 'use client';
+// ТАЙЛБАР: Dashboard дээр алдаа гарвал хэрэглэгчид ойлгомжтой мэдэгдэл үзүүлнэ.
 export default function ErrorPage({reset}:{error:Error&{digest?:string};reset:()=>void}){return <div role="alert" className="bg-white p-8 rounded-xl border"><h2 className="text-xl font-bold">Мэдээлэл ачаалахад алдаа гарлаа.</h2><p className="mt-2">Өгөгдлийн сангийн холболтоо шалгаарай.</p><button className="mt-5 bg-blue-700 text-white rounded p-3" onClick={()=>reset()}>Дахин оролдох</button></div>}

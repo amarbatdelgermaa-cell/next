@@ -1,3 +1,4 @@
+// ТАЙЛБАР: Өгөгдлийн сан холбогдоогүй үед ашиглах жишээ мэдээлэл.
 import type {Customer,Invoice} from './definitions';
 export const customers:Customer[]=[
 {id:'c1',name:'Bat-Erdene',email:'bat@example.com',image_url:'/avatars/person.svg'},

@@ -1,3 +1,4 @@
+// ТАЙЛБАР: Бүх хуудсыг бүрхсэн үндсэн layout: фонт, HTML болон metadata.
 import type {Metadata} from 'next';
 import '@/app/ui/global.css';
 import {inter} from '@/app/ui/fonts';

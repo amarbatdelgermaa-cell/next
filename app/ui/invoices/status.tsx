@@ -1,2 +1,29 @@
-import clsx from 'clsx';
-export default function InvoiceStatus({status}:{status:string}){return <span className={clsx('inline-flex items-center rounded-full px-2 py-1 text-sm',{'bg-gray-100 text-gray-500':status==='pending','bg-green-500 text-white':status==='paid'})}>{status==='paid'?'Төлөгдсөн':'Хүлээгдэж буй'}</span>}
+// ТАЙЛБАР: Төлөв paid бол ногоон, бусад тохиолдолд шар тэмдэглэгээ харуулна.
+
+export default function InvoiceStatus({
+  status,
+}: {
+  status: string;
+}) {
+  // paid гэдэг нь төлөгдсөн гэсэн утгатай.
+  const isPaid = status === 'paid';
+
+  return (
+    <span
+      style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '6px 14px',
+        borderRadius: '999px',
+        fontSize: '13px',
+        fontWeight: 600,
+        // Нөхцөл үнэн бол ногоон, худал бол шар дэвсгэр сонгоно.
+        backgroundColor: isPaid ? '#dcfce7' : '#fef3c7',
+        color: isPaid ? '#166534' : '#92400e',
+      }}
+    >
+      {isPaid ? 'Төлөгдсөн' : 'Төлөгдөөгүй'}
+    </span>
+  );
+}

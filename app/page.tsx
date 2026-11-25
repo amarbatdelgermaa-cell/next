@@ -1,3 +1,4 @@
+// ТАЙЛБАР: Сайтын анхны танилцуулга хуудас.
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '@/app/ui/home.module.css';

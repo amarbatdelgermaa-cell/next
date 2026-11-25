@@ -1,5 +1,6 @@
 
 'use client';
+// ТАЙЛБАР: Нэхэмжлэхийн хэрэглэгч, дүн, төлөв оруулах форм.
 
 import { useActionState } from 'react';
 import type { Customer, Invoice } from '@/app/lib/definitions';
@@ -24,6 +25,7 @@ export default function InvoiceForm({
     message: null,
   };
 
+  // Форм илгээхэд серверийн хариу, алдаа болон хүлээлтийг удирдана.
   const [state, formAction, pending] = useActionState(
     action,
     initialState

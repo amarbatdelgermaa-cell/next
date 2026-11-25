@@ -1,3 +1,4 @@
+// ТАЙЛБАР: Dashboard-ийн зүүн талын цэс.
 import Link from 'next/link';
 import {LogOut} from 'lucide-react';
 import {signOut} from '@/auth';

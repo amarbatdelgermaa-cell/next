@@ -1,1 +1,2 @@
+// ТАЙЛБАР: Нэхэмжлэх олдохгүй үед харуулах 404 хуудас.
 import Link from 'next/link';export default function NotFound(){return <main><h2 className='text-2xl font-bold'>Нэхэмжлэх олдсонгүй (404)</h2><Link className='text-blue-700 underline' href='/dashboard/invoices'>Жагсаалт руу буцах</Link></main>}
